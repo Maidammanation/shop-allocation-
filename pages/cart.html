@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - ShopApp</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="logo">Shop<span>App</span></a>
+      <nav class="nav-links">
+        <a href="../index.html">Shop</a>
+        <a href="cart.html" class="active">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <h1>Your Shopping Cart</h1>
+    <div class="cart-layout" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-top: 1.5rem;">
+      <div class="cart-items" id="cart-items-container">
+        <p style="color: var(--text-muted);">Your cart is currently empty.</p>
+      </div>
+
+      <div class="cart-summary" style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e2e8f0; height: fit-content;">
+        <h2 style="margin-bottom: 1rem;">Order Summary</h2>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+          <span>Subtotal</span>
+          <span id="subtotal">$0.00</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+          <span>Shipping</span>
+          <span>Free</span>
+        </div>
+        <hr style="margin-bottom: 1rem; border: none; border-top: 1px solid #e2e8f0;">
+        <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.2rem; margin-bottom: 1.5rem;">
+          <span>Total</span>
+          <span id="total">$0.00</span>
+        </div>
+        <a href="checkout.html" class="add-to-cart-btn" style="display: block; text-align: center; text-decoration: none;">Proceed to Checkout</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 ShopApp. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
